@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A6157D06-DBAC-426F-932A-6981A21E8F95}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>game</RootNamespace>
+    <AssemblyName>game</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bearBattleEpilogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bearBattleEpilogue.Designer.cs">
+      <DependentUpon>bearBattleEpilogue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bearBattleTryAgain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bearBattleTryAgain.Designer.cs">
+      <DependentUpon>bearBattleTryAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dvorets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dvorets.Designer.cs">
+      <DependentUpon>dvorets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="epilogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="epilogue.Designer.cs">
+      <DependentUpon>epilogue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="finalBattle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="finalBattle.Designer.cs">
+      <DependentUpon>finalBattle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrogDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrogDialog.Designer.cs">
+      <DependentUpon>FrogDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="questFinish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="questFinish.Designer.cs">
+      <DependentUpon>questFinish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="questWaiting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="questWaiting.Designer.cs">
+      <DependentUpon>questWaiting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="secretquest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="secretquest.Designer.cs">
+      <DependentUpon>secretquest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="towerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="towerDialog.Designer.cs">
+      <DependentUpon>towerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tryAgain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tryAgain.Designer.cs">
+      <DependentUpon>tryAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zamok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zamok.Designer.cs">
+      <DependentUpon>zamok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="битвасмедведем.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="битвасмедведем.Designer.cs">
+      <DependentUpon>битвасмедведем.cs</DependentUpon>
+    </Compile>
+    <Compile Include="диалогскоролем.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="диалогскоролем.Designer.cs">
+      <DependentUpon>диалогскоролем.cs</DependentUpon>
+    </Compile>
+    <Compile Include="медведь.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="медведь.Designer.cs">
+      <DependentUpon>медведь.cs</DependentUpon>
+    </Compile>
+    <Compile Include="титры.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="титры.Designer.cs">
+      <DependentUpon>титры.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="bearBattleEpilogue.resx">
+      <DependentUpon>bearBattleEpilogue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bearBattleTryAgain.resx">
+      <DependentUpon>bearBattleTryAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dvorets.resx">
+      <DependentUpon>dvorets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="epilogue.resx">
+      <DependentUpon>epilogue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="finalBattle.resx">
+      <DependentUpon>finalBattle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrogDialog.resx">
+      <DependentUpon>FrogDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="questFinish.resx">
+      <DependentUpon>questFinish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="questWaiting.resx">
+      <DependentUpon>questWaiting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="secretquest.resx">
+      <DependentUpon>secretquest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="towerDialog.resx">
+      <DependentUpon>towerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tryAgain.resx">
+      <DependentUpon>tryAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zamok.resx">
+      <DependentUpon>zamok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="битвасмедведем.resx">
+      <DependentUpon>битвасмедведем.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="диалогскоролем.resx">
+      <DependentUpon>диалогскоролем.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="медведь.resx">
+      <DependentUpon>медведь.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="титры.resx">
+      <DependentUpon>титры.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ифслпкщгтв.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\корабль пролог.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\замоквнутри3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\замоквнутри.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\замоквнутри2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gokust.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\korabl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\знакготовности.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\дворец.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\temfon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\лицокороля1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\лицокороля3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\лицокороля2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainheroface1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainheroface2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainheroface3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\медведь.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\медведьлицо.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\меч.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\мечСломан.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youdied.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youwin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\меч1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\мечСломан1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\лицоsq1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowHint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bearcompele.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\лягуха.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\лфгухагиф.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tower.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wizardFace.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\волшебникзлой.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heroFace.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wizardson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\princessfriend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magicblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magic.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\волшебникрасстроен.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\звезданезлая.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\звездазлая.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
